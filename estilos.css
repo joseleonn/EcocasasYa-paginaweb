@@ -1,0 +1,389 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+}
+h1{font-size: 3.5em;
+font-weight: bold;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: green;
+}
+
+button:hover{
+    background-color: rgb(0, 104, 0);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+/*PARTE DE ARRIBA */
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: green;
+    font-size: 1.7em;
+}
+
+header .conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction:;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+header a:hover{
+    color: green;
+}
+/* IMAGEN PRINCIPAL */
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color:white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+}
+/*CARACTERISTICAS ABAJO DE LA IMAGEN PRINCIPAL */
+#caracteristicas{
+
+}
+
+#caracteristicas .container{
+    padding: 10px 30px;
+    text-align: center;
+    margin: 0;
+    
+    background-image: ;
+    
+}
+
+#caracteristicas .carta{
+    padding: 0px 30px;
+    text-align: center;
+    margin: 0;
+    
+}
+#caracteristicas p{
+    text-align: center;
+    font-size: 17px;
+
+}
+/*NUESTRA PROPUESTA */
+#nuestrapropuesta {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+#nuestrapropuesta h2{
+    padding: 25px 15px;
+    text-align: center;
+    color: green;
+    
+}
+#nuestrapropuesta .h3{
+    font-size: 15px;
+    padding: 10px;
+}
+#nuestrapropuesta .container{
+    padding: 5px 30px;
+    margin 0;
+    text-align: center;
+}
+
+#nuestrapropuesta .carta{
+    padding: 5px 12px;
+    margin: 0;
+}
+
+#nuestrapropuesta p{
+    font-size: 20px;
+    padding: 5px;
+    margin: 0;
+}
+
+/*CASA LLAVE EN MANO*/
+#casallaveenmano .container{
+    text-align: ;
+    padding: 200px 12px;
+    background-color: rgb(245,245,245);
+}
+
+
+#casallaveenmano li{
+    margin: 15px 0px;
+    font-weight: bold;
+
+}
+/* SISTEMAS CONSTRUCTIVOS CARTAS */
+
+#sistemaconstructivo h2{
+    padding: 25px 100px;
+    margin: 0;
+    color: green;
+    font-weight: bold;
+}
+#sistemaconstructivo {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+#sistemaconstructivo .container{
+    padding: 50px 0px;
+}
+
+#sistemaconstructivo p{
+    font-size: 20px;
+    display: none;
+}
+
+#sistemaconstructivo h3{
+    font-size: 32px;
+}
+
+#sistemaconstructivo .cartass{
+    background-color: rgb(25, 25, 25);
+    padding: 50px 20px;
+    margin: 15px;
+    border-radius: 5%;
+}
+
+#sistemaconstructivo .imagen2{
+    padding: 12px;
+    border-radius: 30%;
+}
+
+.cartass:first-child{
+    padding: 30px 12px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/tradicional2.jpg");
+}
+.cartass:nth-child(2){
+    padding: 30px 12px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url("imagenes/steelframe2.jpg");
+}
+.cartass:nth-child(3){
+    padding: 30px 12px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/concrehaus2.jpg");
+}
+
+
+
+
+/* footer */
+footer{
+    background-color: rgb(230,230,230);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+footer .container{
+    padding: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px) {
+   header .container{
+    flex-direction: row;
+   }
+
+   header nav{
+    flex-direction: row;
+
+   }
+   #nuestrapropuesta h2{
+    padding: 50px 20px;
+   }
+
+   #nuestrapropuesta .container{
+    display: flex;
+    padding: 40px 30px;
+   }
+
+   #nuestrapropuesta .cartas{
+    padding: 0px 0px;
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(100, 100, 100);
+    border-radius: 10px;
+    
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+   }
+
+  .fondonp:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color:white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/dise.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center
+  }
+
+  .fondonp:nth-child(2){
+    margin: 0;
+    padding: 30px 12px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/constr.webp");
+  }
+
+  .fondonp:nth-child(3){
+    padding: 30px 12px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/garantia.jpg");
+  }
+
+  #nuestrapropuesta p{
+    text-align: justify;
+    padding: 30px 20px;
+    font-weight:lighter;
+    font-size: 17px;
+  }
+
+  #casallaveenmano .container{
+    display: flex;
+  }
+
+  #casallaveenmano .img-container{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0),
+        rgba(0,0,0,0)
+    )
+    ,url("imagenes/ecologo3.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+  }
+
+
+
+  #caracteristicas{
+ 
+}
+
+#caracteristicas .container{
+    padding: 10px 30px;
+    text-align: center;
+    display: flex;
+    margin: 0;
+    height: 90vh;
+    background-image: ;
+    
+}
+
+#caracteristicas .carta{
+    padding: 5px 30px;
+    text-align: center;
+    margin: 0;
+    height: 90vh;
+}
+
+#sistemaconstructivo h2{
+    padding: 40px 20px;
+}
+
+
+#sistemaconstructivo .tipos{
+    display: flex;
+    justify-content: center;
+
+}
+
+#sistemaconstructivo p{
+    display: block;
+    margin-bottom: 40px;
+    padding: 12px 20px;
+    text-align: justify;
+    font-size: 17px;
+}
+}
+#sistemaconstructivo .cartass{
+    padding: 15px;
+}
+}
